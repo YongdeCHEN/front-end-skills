@@ -1,0 +1,36 @@
+<html>
+    <header>
+
+        <style>
+            .father {
+                border: 1px solid red;
+                width: 300px;
+                height: 300px;
+            }
+            .child {
+                background: green;    
+            }
+            .child {     
+                width: 100px;
+                height: 100px;
+            }
+
+            /* solution */
+            .father {
+                display: grid;
+            }
+            .child {
+                align-self: center;
+                justify-self: center;
+            }
+        </style>
+    </header>
+
+    <body>
+        <div id="root">
+            <div class="father">
+                <div class="child">hello world</div>
+            </div>
+        </div>
+    </body>
+</html>

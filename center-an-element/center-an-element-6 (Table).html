@@ -1,0 +1,39 @@
+<html>
+    <header>
+
+        <style>
+            .father {
+                border: 1px solid red;
+                width: 300px;
+                height: 300px;
+            }
+            .child {
+                background: green;    
+            }
+            .child {     
+                width: 100px;
+                height: 100px;
+            }
+
+            /* solution */
+            .father {
+                text-align: center;
+            }
+            .child {
+                display: inline-block;
+            }
+        </style>
+    </header>
+
+    <body>
+        <div id="root">
+            <table>
+                <tr>
+                    <td class="father">
+                        <div class="child">hello world</div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<html>
+    <header>
+
+        <style>
+            .father {
+                border: 1px solid red;
+                width: 300px;
+                height: 300px;
+            }
+            .child {
+                background: green;    
+            }
+            .child {     
+                width: 100px;
+                height: 100px;
+            }
+
+            /* solution */
+            .father {
+                writing-mode: vertical-lr;
+                text-align: center;
+            }
+            .middle {
+                display: inline-block;
+                writing-mode: horizontal-tb;
+                text-align: center;
+                width: 100%;
+            }
+            .child {
+                display: inline-block;
+                text-align: left;
+                /* margin: auto; */
+            }
+        </style>
+    </header>
+
+    <body>
+        <div id="root">
+            <div class="father">
+                <div class="middle">
+                    <div class="child">hello world</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+    <header>
+
+        <style>
+            .father {
+                border: 1px solid red;
+                width: 300px;
+                height: 300px;
+
+                position: relative;
+            }
+            .child {
+                background: green;    
+            }
+            .child {
+                width: 100px;
+                height: 100px;
+
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        </style>
+    </header>
+
+    <body>
+        <div id="root">
+            <div class="father">
+                <div class="child">hello world</div>
+            </div>
+        </div>
+    </body>
+</html>
